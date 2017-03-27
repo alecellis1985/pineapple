@@ -1,0 +1,40 @@
+{
+  "name": "pineapplelab",
+  "version": "1.0.0",
+  "description": "software company",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alecellis1985/pineapple.git"
+  },
+  "keywords": [
+    "frontend",
+    "angular",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "alexander ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alecellis1985/pineapple/issues"
+  },
+  "homepage": "https://github.com/alecellis1985/pineapple#readme"
+}
