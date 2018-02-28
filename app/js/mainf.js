@@ -68,9 +68,9 @@ $(window).load(function () {
   });
 });
 
-(function () {
-  'use strict';
-  $('.team-leader-box').on('click', function () {
-    $(this).find('p').slideToggle("slow");
-  });
-})();
+//(function () {
+//  'use strict';
+//  $('.team-leader-box').on('click', function () {
+//    $(this).find('p').slideToggle("slow");
+//  });
+//})();
