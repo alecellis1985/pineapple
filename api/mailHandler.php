@@ -16,6 +16,8 @@ function sendEmail() {
 	        $messageBody .= "<p>Message: " . $emailPostData->mensaje . "</p>" . "\n";
             $messageBody .= "<br>" . "\n";
 	        $messageBody = strip_tags($messageBody);
+			$captcha = new SimpleCaptcha();
+			$isHuman = $captcha->Validate($captchaCode, $captchaId);
 			try {
 				if ( mail('alecellis1985@gmail.com',$subject,$messageBody,$headers)) {
 					$response = MessageHandler::getSuccessResponse("The email has been sent!", null);
