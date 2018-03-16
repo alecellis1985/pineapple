@@ -629,12 +629,28 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-6 wow fadeInLeft">
                     <div class="contact-info-box address clearfix">
-                        <h3><i class=" icon-map-marker"></i>Address:</h3>
+                        <h3><i class=" icon-map-marker"></i>US Office</h3>
+                    </div>
+                    <div class="contact-info-box address clearfix">
+                        <h3><i class="fa fa-map-marker"></i>Address:</h3>
+                        <span>100 Church Street,<br />Suite 800  PMB#850,<br />New York, NY 10007.</span>
+                    </div>
+                    <div class="contact-info-box phone clearfix">
+                        <h3><i class="fa-phone"></i>Phone:</h3>
+                        <span>+13473057243</span>
+                        <br />
+                    </div>
+                    <div class="contact-info-box address clearfix">
+                        <h3><i class=" icon-map-marker"></i>Uruguay Office</h3><br />
+                    </div>
+                    <div class="contact-info-box address clearfix">
+                        <h3><i class="fa fa-map-marker"></i>Address:</h3>
                         <span>Alberdi 6248<br>Montevideo, Uruguay, 11500.</span>
                     </div>
                     <div class="contact-info-box phone clearfix">
                         <h3><i class="fa-phone"></i>Phone:</h3>
                         <span>+59898635923</span>
+                        <br />
                     </div>
                     <div class="contact-info-box email clearfix">
                         <h3><i class="fa-pencil"></i>email:</h3>
@@ -660,7 +676,7 @@
                             <input class="input-text" type="text" name="email" value="Your E-mail *" ng-model="vm.user.email" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;">
 
                             <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;">Your Message *</textarea>
-                            <input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">
+                            <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
                             <button type="submit" class="btn btn-warning">Send</button>
                         </form>
                     </div>
@@ -668,14 +684,18 @@
             </div>
         </section>
     </div>
+    <section id="maps">
+        <div class="col-md-6" id="map1"></div>
+        <div class="col-md-6" id="map2"></div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-logo">
                 <a href="#">
                     <!--<img src="img/footer-logo.png" alt="">-->
-                    <img src="app/img/pineappleWhiteLogo.png" alt="pineapple lab">
-                </a>
-            </div>
+                            <img src="app/img/pineappleWhiteLogo.png" alt="pineapple lab">
+                            </a>
+</div>
             <span class="copyright">Copyright © 2018 Pineapple-lab software solutions. All rights reserved.</span>
         </div>
     </footer>
@@ -700,7 +720,31 @@
     <script type="text/javascript" src="app/js/classie.js"></script>
     <script type="text/javascript" src="app/js/mainf.js"></script>
     <!-- endbuild -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakIwJebqHNEbDY5Mt2ZEs-P7XR2vKJdo&callback=initMap"></script>
+    <script>
+        function initMap() {
+            var uluru1 = { lat: 40.713068, lng: -74.010308 }; 
+            var uluru2 = { lat: -34.882327, lng: -56.072614 };
+
+            var map1 = new google.maps.Map(document.getElementById('map1'), {
+                zoom: 14,
+                center: uluru1
+            });
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                zoom: 14,
+                center: uluru2
+            });
+
+            var marker1 = new google.maps.Marker({
+                position: uluru1,
+                map: map1
+            });
+            var marker2 = new google.maps.Marker({
+                position: uluru2,
+                map: map2
+            });
+        }
+    </script>
 </body>
 </html>
-<script>$(document).ready(function () { $(".completed").append("<div style='position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: white;opacity: 0.3;'></div>"); $(".completed").append("<p style='margin-top: 30%;transform: rotate(45deg);text-align: center;font-size: 21px;color: white;position: absolute;top: -60px;right: -95px;" + "width: 100%;background: #00ADEF;'>Completed</p>"); $(".completed").css("overflow", "hidden"); });</script>
 
