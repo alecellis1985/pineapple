@@ -135,7 +135,7 @@
                         </div>
                         <div class="service-list-col2">
                             <h3>Scalability</h3>
-                            <p>We enjoy working on big and proyects.</p>
+                            <p>We enjoy working on large and small proyects.</p>
                         </div>
                     </div>
                 </div>
@@ -327,13 +327,6 @@
                 <h3>La Maina</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="http://www.infladivertidos.com" target="_blank">
-                    <img src="app/img/infladivertidos.png" alt="Infladivertidos" />
-                </a>
-                <h3>Infladivertidos</h3>
-                <p>Web developement</p>
-            </div>
         </div>
     </section><!--main-section-end-->
     <section class="main-section client-part" id="client">
@@ -511,7 +504,7 @@
                     <h3 class="wow fadeInDown delay-06s">Michael Ellis</h3>
                     <span class="wow fadeInDown delay-06s">Mobile Developer</span>
                     <p class="wow fadeInDown delay-06s">
-                        I am a football player in Uruguay and a dedicated developer who loves to use patterns and have clean code!
+                        Hey, I'm Mike. I write clean, maintainable code with great structure and organization. I love researching to stay on top of the latest technologies. I develop because I simply love to.
                     </p>
                 </div>
 
@@ -670,12 +663,13 @@
                 </div>
                 <div class="col-lg-6 col-sm-6 wow fadeInUp delay-05s" ng-app="form">
                     <div class="form" ng-controller="homeCtrl as vm">
+                        <h2 class="text-center">Contact Us!</h2>
                         <form ng-submit="vm.sendEmail(emailData.$valid)" name="emailData" style="padding-top: 10px" novalidate>
-                            <input class="input-text" type="text" name="name" value="Your Name *" ng-model="vm.user.nombre" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;">
+                            <input class="input-text" type="text" name="name" placeholder="Name">
 
-                            <input class="input-text" type="text" name="email" value="Your E-mail *" ng-model="vm.user.email" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;">
+                            <input class="input-text" type="text" name="email" placeholder="Email">
 
-                            <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;">Your Message *</textarea>
+                            <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" placeholder="Message"></textarea>
                             <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
                             <button type="submit" class="btn btn-warning">Send</button>
                         </form>

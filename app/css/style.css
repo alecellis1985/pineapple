@@ -598,7 +598,7 @@ img {
   font-size: 15px;
   font-weight: 400;
   float: left;
-  width: 102px;
+  width: 150px;
   margin-right: 12px;
   line-height: 28px; }
 
@@ -876,3 +876,6 @@ img {
 
 .item blockquote small {
   margin-bottom: 150px; }
+
+#maps, #map1, #map2 {
+  height: 300px; }

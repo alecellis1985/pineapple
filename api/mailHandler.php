@@ -12,7 +12,7 @@ function sendEmail() {
 			$messageBody = "";
 		    $messageBody .= "<p><b>Please do not respond to this email.</b></p>" . "\n";
 	        $messageBody .= "<p>Contact this person at: " . $emailPostData->email . "</p>" . "\n";
-	        $messageBody .= "<p>Message: " . $emailPostData->nombre . "</p>" . "\n";
+	        $messageBody .= "<p>Nombre: " . $emailPostData->nombre . "</p>" . "\n";
 	        $messageBody .= "<p>Message: " . $emailPostData->mensaje . "</p>" . "\n";
             $messageBody .= "<br>" . "\n";
 	        $messageBody = strip_tags($messageBody);
