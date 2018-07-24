@@ -4,6 +4,7 @@
   "description": "software company",
   "main": "index.html",
   "dependencies": {
+    "angularjs-captcha": "^1.3.3",
     "gulp": "^3.9.1"
   },
   "devDependencies": {

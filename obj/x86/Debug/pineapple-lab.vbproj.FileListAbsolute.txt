@@ -1,0 +1,3 @@
+C:\Users\Pineapple-lab\Source\Repos\pineapple\obj\x86\Debug\pineapple-lab.vbprojResolveAssemblyReference.cache
+C:\Users\Pineapple-lab\Source\Repos\pineapple\obj\x86\Debug\pineapple-lab.vbproj.CoreCompileInputs.cache
+C:\Users\Pineapple-lab\Source\Repos\pineapple\obj\x86\Debug\pineapple-lab.vbprojAssemblyReference.cache

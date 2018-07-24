@@ -6,7 +6,8 @@
     function homeCtrl($timeout, $rootScope, CommonService) {
         var vm = this;
 
-		vm.sendEmail = function (isValid) {
+        vm.sendEmail = function (isValid) {
+            debugger;
             if (!isValid) {
                 $rootScope.$broadcast('alert-event', { type: 'danger', msg: "Existen errores en el formulario!" });
                 return;

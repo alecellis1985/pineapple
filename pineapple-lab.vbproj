@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{625A798B-75B6-4030-BA0C-2D488AEF55BC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>pineapple_lab</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-18174943b8a4bd8133185e36ac956ebc9dda0b01.idx" />
+    <None Include=".git\objects\pack\pack-18174943b8a4bd8133185e36ac956ebc9dda0b01.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\pineapple\v15\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="api\.htaccess" />
+    <None Include="app\fonts\fontawesome-webfont.eot" />
+    <None Include="app\fonts\fontawesome-webfont.ttf" />
+    <None Include="app\fonts\fontawesome-webfont.woff" />
+    <None Include="app\fonts\fontawesome-webfont.woff2" />
+    <None Include="app\fonts\FontAwesome.otf" />
+    <None Include="app\scss\style.scss" />
+    <None Include="nbproject\project.properties" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\index.php" />
+    <Content Include="api\mailHandler.php" />
+    <Content Include="api\Slim\config\parametros.php" />
+    <Content Include="api\Slim\Exception\Pass.php" />
+    <Content Include="api\Slim\Exception\RequestSlash.php" />
+    <Content Include="api\Slim\Exception\Stop.php" />
+    <Content Include="api\Slim\Http\Cookie.php" />
+    <Content Include="api\Slim\Http\CookieJar.php" />
+    <Content Include="api\Slim\Http\Request.php" />
+    <Content Include="api\Slim\Http\Response.php" />
+    <Content Include="api\Slim\Http\Uri.php" />
+    <Content Include="api\Slim\includes\class.Conexion.BD.php" />
+    <Content Include="api\Slim\includes\MessageHandler.php" />
+    <Content Include="api\Slim\Log.php" />
+    <Content Include="api\Slim\Logger.php" />
+    <Content Include="api\Slim\Route.php" />
+    <Content Include="api\Slim\Router.php" />
+    <Content Include="api\Slim\Session\Flash.php" />
+    <Content Include="api\Slim\Session\Handler.php" />
+    <Content Include="api\Slim\Session\Handler\Cookies.php" />
+    <Content Include="api\Slim\Slim.php" />
+    <Content Include="api\Slim\View.php" />
+    <Content Include="app\css\animate.css" />
+    <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\css\font-awesome.min.css" />
+    <Content Include="app\css\responsive.css" />
+    <Content Include="app\css\style.css" />
+    <Content Include="app\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\img\abanob.jpg" />
+    <Content Include="app\img\andresMatonti.jpg" />
+    <Content Include="app\img\android.png" />
+    <Content Include="app\img\bg-map.png" />
+    <Content Include="app\img\c-liogo1.png" />
+    <Content Include="app\img\c-liogo2.png" />
+    <Content Include="app\img\c-liogo3.png" />
+    <Content Include="app\img\c-liogo4.png" />
+    <Content Include="app\img\c-liogo5.png" />
+    <Content Include="app\img\c-liogo6.png" />
+    <Content Include="app\img\client-pic1.jpg" />
+    <Content Include="app\img\client-pic2.jpg" />
+    <Content Include="app\img\client-pic3.JPG" />
+    <Content Include="app\img\client-pic4.JPG" />
+    <Content Include="app\img\cmhworks.JPG" />
+    <Content Include="app\img\docola.png" />
+    <Content Include="app\img\emin.png" />
+    <Content Include="app\img\footer-logo.png" />
+    <Content Include="app\img\Glamst.png" />
+    <Content Include="app\img\glazier.png" />
+    <Content Include="app\img\glyphicons-halflings-white.png" />
+    <Content Include="app\img\glyphicons-halflings.png" />
+    <Content Include="app\img\guillermoGette.jpg" />
+    <Content Include="app\img\headLogo.png" />
+    <Content Include="app\img\imac.png" />
+    <Content Include="app\img\infladivertidos.png" />
+    <Content Include="app\img\iPad.png" />
+    <Content Include="app\img\iphone.png" />
+    <Content Include="app\img\jmsobral.jpg" />
+    <Content Include="app\img\joaquin.jpg" />
+    <Content Include="app\img\laMaina.png" />
+    <Content Include="app\img\leads2buyer.png" />
+    <Content Include="app\img\leopoll.png" />
+    <Content Include="app\img\list-style.png" />
+    <Content Include="app\img\logo.png" />
+    <Content Include="app\img\Logo_Pineapple.svg" />
+    <Content Include="app\img\macbook-pro.png" />
+    <Content Include="app\img\mathias.jpg" />
+    <Content Include="app\img\michael.jpg" />
+    <Content Include="app\img\mkadhikari.jpg" />
+    <Content Include="app\img\mydocumenta.png" />
+    <Content Include="app\img\pineappleLogo.png" />
+    <Content Include="app\img\pineappleWhiteLogo.png" />
+    <Content Include="app\img\plan_b.png" />
+    <Content Include="app\img\Portfolio-pic1.jpg" />
+    <Content Include="app\img\Portfolio-pic2.jpg" />
+    <Content Include="app\img\Portfolio-pic3.jpg" />
+    <Content Include="app\img\Portfolio-pic4.jpg" />
+    <Content Include="app\img\Portfolio-pic5.jpg" />
+    <Content Include="app\img\Portfolio-pic6.jpg" />
+    <Content Include="app\img\prestauy.png" />
+    <Content Include="app\img\profesionales.png" />
+    <Content Include="app\img\pw_maze_black.png" />
+    <Content Include="app\img\pw_maze_black_2X.png" />
+    <Content Include="app\img\res_nav_click.png" />
+    <Content Include="app\img\salusconnect.png" />
+    <Content Include="app\img\santiagoGolino.jpg" />
+    <Content Include="app\img\section-bg1.jpg" />
+    <Content Include="app\img\section-bg2.jpg" />
+    <Content Include="app\img\small-logo.png" />
+    <Content Include="app\img\team-leader-pic1.jpg" />
+    <Content Include="app\img\team-leader-pic2.jpg" />
+    <Content Include="app\img\team-leader-pic3.jpg" />
+    <Content Include="app\img\wp.png" />
+    <Content Include="app\img\xendra.png" />
+    <Content Include="app\js\alert.controller.js" />
+    <Content Include="app\js\angular-ui-router.min.js" />
+    <Content Include="app\js\angularjs-captcha.js" />
+    <Content Include="app\js\angular.min.js" />
+    <Content Include="app\js\bootstrap.js" />
+    <Content Include="app\js\classie.js" />
+    <Content Include="app\js\CommonService.js" />
+    <Content Include="app\js\home.controller.js" />
+    <Content Include="app\js\html5element.js" />
+    <Content Include="app\js\html5shiv.js" />
+    <Content Include="app\js\jquery-scrolltofixed.js" />
+    <Content Include="app\js\jquery.1.8.3.min.js" />
+    <Content Include="app\js\jquery.easing.1.3.js" />
+    <Content Include="app\js\jquery.isotope.js" />
+    <Content Include="app\js\mainf.js" />
+    <Content Include="app\js\respond-1.1.0.min.js" />
+    <Content Include="app\js\form.app.js" />
+    <Content Include="app\js\wow.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
+    <Content Include="gulpfile.js" />
+    <Content Include="index.html" />
+    <Content Include="nbproject\project.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\pineapple-lab\v15\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
