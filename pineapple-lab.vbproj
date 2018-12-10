@@ -155,14 +155,17 @@
     <Content Include="app\img\glazier.png" />
     <Content Include="app\img\glyphicons-halflings-white.png" />
     <Content Include="app\img\glyphicons-halflings.png" />
+    <Content Include="app\img\gubba.jpg" />
     <Content Include="app\img\guillermoGette.jpg" />
     <Content Include="app\img\headLogo.png" />
+    <Content Include="app\img\hipotecuy.jpg" />
     <Content Include="app\img\imac.png" />
     <Content Include="app\img\infladivertidos.png" />
     <Content Include="app\img\iPad.png" />
     <Content Include="app\img\iphone.png" />
     <Content Include="app\img\jmsobral.jpg" />
     <Content Include="app\img\joaquin.jpg" />
+    <Content Include="app\img\kaoshi.jpg" />
     <Content Include="app\img\laMaina.png" />
     <Content Include="app\img\leads2buyer.png" />
     <Content Include="app\img\leopoll.png" />
@@ -185,6 +188,7 @@
     <Content Include="app\img\Portfolio-pic6.jpg" />
     <Content Include="app\img\prestauy.png" />
     <Content Include="app\img\profesionales.png" />
+    <Content Include="app\img\psi.jpg" />
     <Content Include="app\img\pw_maze_black.png" />
     <Content Include="app\img\pw_maze_black_2X.png" />
     <Content Include="app\img\res_nav_click.png" />
