@@ -334,11 +334,13 @@ p {
   float: left;
   padding: 0; }
 
-.Portfolio-box img {
-  margin-bottom: 25px;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out; }
+    .Portfolio-box img {
+        margin-bottom: 25px;
+        height: 261px;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
 
 .Portfolio-box img:hover {
   opacity: 0.6; }
