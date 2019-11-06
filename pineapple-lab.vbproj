@@ -145,9 +145,9 @@
     <Content Include="app\img\c-liogo6.png" />
     <Content Include="app\img\client-pic1.jpg" />
     <Content Include="app\img\client-pic2.jpg" />
-    <Content Include="app\img\client-pic3.JPG" />
-    <Content Include="app\img\client-pic4.JPG" />
-    <Content Include="app\img\cmhworks.JPG" />
+    <Content Include="app\img\client-pic3.jpg" />
+    <Content Include="app\img\client-pic4.jpg" />
+    <Content Include="app\img\cmhworks.jpg" />
     <Content Include="app\img\docola.png" />
     <Content Include="app\img\emin.png" />
     <Content Include="app\img\footer-logo.png" />
@@ -177,6 +177,7 @@
     <Content Include="app\img\michael.jpg" />
     <Content Include="app\img\mkadhikari.jpg" />
     <Content Include="app\img\mydocumenta.png" />
+    <Content Include="app\img\oscar.png" />
     <Content Include="app\img\pineappleLogo.png" />
     <Content Include="app\img\pineappleWhiteLogo.png" />
     <Content Include="app\img\plan_b.png" />
@@ -202,6 +203,7 @@
     <Content Include="app\img\team-leader-pic3.jpg" />
     <Content Include="app\img\wp.png" />
     <Content Include="app\img\xendra.png" />
+    <Content Include="app\img\yamaris.png" />
     <Content Include="app\js\alert.controller.js" />
     <Content Include="app\js\angular-ui-router.min.js" />
     <Content Include="app\js\angularjs-captcha.js" />
