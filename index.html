@@ -1,14 +1,21 @@
 ﻿<!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="Description" content="Software Solutions - Because your dreams can always come true">
+
     <title>Pineapple-lab</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
-          rel='stylesheet' type='text/css'>
+    <meta name="theme-color" content="#f3ba3e" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f3ba3e">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link
+        href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
+        rel='stylesheet' type='text/css'>
     <!--build:css /app/css/styles.min.css-->
     <link href="app/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="app/css/style.css" rel="stylesheet" type="text/css">
@@ -17,13 +24,14 @@
     <link href="app/css/responsive.css" rel="stylesheet" type="text/css">
     <!--endbuild-->
 </head>
+
 <body>
     <div style="overflow:hidden;">
         <header class="header" id="header">
             <!--header-start-->
             <div class="container">
                 <figure class="logo animated fadeInDown delay-07s">
-                    <a id="starT_" href="#test">
+                    <a id="starT_" href="#">
                         <img src="app/img/headLogo.png" alt="Pine-apple">
                     </a>
                 </figure>
@@ -31,11 +39,11 @@
                 <ul class="we-create animated fadeInUp delay-1s">
                     <li>Because your dreams can always come true.</li>
                 </ul>
-                <a id="getStarted" class="link animated fadeInUp delay-1s" href="#test">Get Started</a>
+                <a id="getStarted" class="link animated fadeInUp delay-1s" href="#start">Get Started</a>
             </div>
         </header>
     </div>
-    <nav class="main-nav-outer" id="test">
+    <nav class="main-nav-outer" id="start">
         <!--main-nav-start-->
         <div class="container">
             <ul class="main-nav">
@@ -52,9 +60,10 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact US</a></li>
             </ul>
-            <a class="res-nav_click" href="#" data-role="button"><i class="fa-bars"></i></a>
+            <a class="res-nav_click" href="#" data-role="button" aria-label="Menu"><i class="fa-bars"></i></a>
         </div>
-    </nav><!--main-nav-end-->
+    </nav>
+    <!--main-nav-end-->
     <section class="main-section" id="service">
         <!--main-section-start-->
         <div class="container">
@@ -82,7 +91,7 @@
                     </div>
                     <div class="service-list">
                         <div class="service-list-col1">
-                            <i class="fa-mobile"></i>
+                            <i class="fa-mobile" style="font-size: 50px;"></i>
                         </div>
                         <div class="service-list-col2">
                             <h3>mobile design</h3>
@@ -99,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <figure class="col-md-4 col-md-6 col-sm-12  text-right wow fadeInUp delay-02s">
+                <figure class="col-md-4 col-md-6 col-sm-12  text-right wow fadeInUp delay-02s ">
                     <img src="app/img/service-laptop.png" alt="">
                 </figure>
 
@@ -144,7 +153,8 @@
 
             </div>
         </div>
-    </section><!--main-section-end-->
+    </section>
+    <!--main-section-end-->
     <section class="main-section alabaster">
         <!--main-section alabaster-start-->
         <div class="container">
@@ -154,10 +164,10 @@
                 </figure>
                 <div class="col-lg-7 col-sm-8 featured-work">
                     <h2>featured work</h2>
-                    <P class="padding-b">
+                    <h6 class="padding-b" style="text-align: left;">
                         For more than eight years we have been working in building a solid structure defining some base
                         requirements for any project we will take care.
-                    </P>
+                    </h6>
                     <div class="featured-box">
                         <div class="featured-box-col1 wow fadeInRight delay-02s">
                             <i class="fa-magic"></i>
@@ -176,7 +186,8 @@
                         </div>
                         <div class="featured-box-col2 wow fadeInRight delay-04s">
                             <h3>neatly packaged</h3>
-                            <p>Every delivered project comes with all files minified and optimized for better speed and performance.</p>
+                            <p>Every delivered project comes with all files minified and optimized for better speed and
+                                performance.</p>
                         </div>
                     </div>
                     <div class="featured-box">
@@ -211,172 +222,231 @@
                 </ul>
             </div>
         </div>
-        <div class="portfolioContainer wow fadeInUp delay-04s">
-            <div class=" Portfolio-box branding">
-                <a href="https://www.doco.la/" target="_blank">
-                    <img src="app/img/docola.png" alt="">
+        <div class="portfolioContainer box-wrap wow fadeInUp delay-04s">
+            <div class=" Portfolio-box box branding">
+                <a href="https://www.doco.la/" target="_blank" aria-label="Docola" rel="noreferrer">
+                    <img src="app/img/docola.jpg" alt="">
                 </a>
                 <h3>Docola</h3>
                 <p>In-Progress</p>
             </div>
-            <div class=" Portfolio-box branding">
-                <a href="http://www.glazierclinics.com/" target="_blank">
-                    <img src="app/img/glazier.png" alt="glazierclinics"/>
+            <div class=" Portfolio-box branding box">
+                <a href="http://www.glazierclinics.com/" target="_blank" aria-label="Glazier clinics" rel="noreferrer">
+                    <img src="app/img/glazier.jpg" alt="glazierclinics" />
                 </a>
                 <h3>Glazier clinics</h3>
                 <p>In-Progress</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="https://www.leopoll.io/" target="_blank">
+            <div class=" Portfolio-box branding box">
+                <a href="https://unid-edu.firebaseapp.com/" target="_blank" aria-label="Unid Edu" rel="noreferrer">
+                    <img src="app/img/unid.png" alt="unid-edu" />
+                </a>
+                <h3>Unid Edu</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box branding box">
+                <a href="https://coronaaprende.com/" target="_blank" aria-label=">Corona Aprende" rel="noreferrer">
+                    <img src="app/img/corona.jpg" alt="Corona" />
+                </a>
+                <h3>Corona Aprende</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box branding box">
+                <a href="https://beta.glazierclinics.com/" target="_blank" aria-label="Glazier clinics" rel="noreferrer">
+                    <img src="app/img/beta.glazier.png" alt="Beta Glazierclinics" />
+                </a>
+                <h3>Glazier clinics</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box branding box">
+                <a href="https://talisisaprende.com/" target="_blank" aria-label="Talisis Aprende" rel="noreferrer">
+                    <img src="app/img/talisis.jpg" alt="Corona" />
+                </a>
+                <h3>Talisis Aprende</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box branding box">
+                <a href="http://locker.glazierclinics.com/" target="_blank" aria-label="Locker Glazier" rel="noreferrer">
+                    <img src="app/img/locker.png" alt="Locker Glazierclinics" />
+                </a>
+                <h3>Locker Glazier</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box printdesign box">
+                <a href="http://qualityplanning.info/" target="_blank" aria-label="Quality Planning" rel="noreferrer">
+                    <img src="app/img/QualityPlanning.JPG" alt="Quality Planning" />
+                </a>
+                <h3>Quality Planning</h3>
+                <p>Web developement</p>
+            </div>
+          
+            <div class=" Portfolio-box branding box">
+                <a href="https://griky.co/" target="_blank"  aria-label="Griky" rel="noreferrer">
+                    <img src="app/img/griky.jpg" alt="unid-edu" />
+                </a>
+                <h3>Griky</h3>
+                <p>In-Progress</p>
+            </div>
+            <div class=" Portfolio-box printdesign box">
+                <a href="http://pb-studio.com" target="_blank" aria-label="Plan B" rel="noreferrer">
+                    <img src="app/img/planb-page.jpg" alt="Plan B" />
+                </a>
+                <h3>Plan B</h3>
+                <p>Web developement</p>
+            </div>
+            <!-- New Box-->
+            <div class=" Portfolio-box printdesign box">
+                <a href="javascript:;" aria-label="Leopoll">
                     <img src="app/img/leopoll.png" alt="" />
                 </a>
                 <h3>Leopoll</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="http://loopbikes.uy/" target="_blank">
-                    <img src="app/img/loopbikes.png" alt="">
+            <!-- Fin new Box-->
+            <div class="Portfolio-box printdesign box">
+                <a href="http://loopbikes.uy/" target="_blank" aria-label="Loop Bikes" rel="noreferrer">
+                    <img src="app/img/loopbikes.jpg" alt="">
                 </a>
                 <h3>Loop Bikes</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="https://eu.salusconnect.io" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="https://eu.salusconnect.io" target="_blank" aria-label="Sensors Integration" rel="noreferrer">
                     <img src="app/img/salusconnect.png" alt="" />
                 </a>
                 <h3>Sensors Integration</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="https://glamst.com/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="https://glamst.com/" target="_blank" aria-label="Glamst" rel="noreferrer">
                     <img src="app/img/Glamst.png" alt="Glamst" />
                 </a>
                 <h3>Glamst</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="http://emin.com.uy/" target="_blank">
+            <div class=" Portfolio-box printdesign box">
+                <a href="http://emin.com.uy/" target="_blank" aria-label="Emin" rel="noreferrer">
                     <img src="app/img/emin.png" alt="" />
                 </a>
                 <h3>Emin</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box branding">
-                <a href="http://cmhworks.com/" target="_blank">
+            <div class=" Portfolio-box branding box">
+                <a href="http://cmhworks.com/" target="_blank" aria-label="CMH Works" rel="noreferrer">
                     <img src="app/img/cmhworks.jpg" alt="" />
                 </a>
                 <h3>CMH Works</h3>
                 <p>In-Progress</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="https://www.prestauy.com/" target="_blank">
+            <div class=" Portfolio-box printdesign box">
+                <a href="https://www.prestauy.com/" target="_blank" aria-label="PrestaUy" rel="noreferrer">
                     <img src="app/img/prestauy.png" alt="" />
                 </a>
                 <h3>PrestaUy</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="http://pb-studio.com" target="_blank">
+            <div class=" Portfolio-box printdesign box">
+                <a href="http://pb-studio.com" target="_blank" aria-label="Plan B" rel="noreferrer">
                     <img src="app/img/plan_b.png" alt="Plan B" />
                 </a>
                 <h3>Plan B</h3>
                 <p>Web developement</p>
             </div>
 
-            <div class="Portfolio-box printdesign">
-                <a href="https://physioassist.co.uk/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="https://physioassist.co.uk/" target="_blank" aria-label="Physioassist" rel="noreferrer">
                     <img src="app/img/physioassist.jpg" alt="Physioassist" />
                 </a>
                 <h3>Physioassist</h3>
                 <p>Web developement</p>
             </div>
-            <div class="Portfolio-box printdesign">
-                <a href="http://agenciaon.uy/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="javascript:;" aria-label="AgenciaOn">
                     <img src="app/img/agenciaOn.jpg" alt="AgenciaOn" />
                 </a>
                 <h3>AgenciaOn</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box printdesign">
-                <a href="https://hipotecuy.com/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="https://hipotecuy.com/" aria-label="HipotecUY" target="_blank" rel="noreferrer">
                     <img src="app/img/hipotecuy.jpg" alt="hipotecUY" />
                 </a>
                 <h3>HipotecUY</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box printdesign">
-                <a href="http://psi.com.uy/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="http://psi.com.uy/" target="_blank" aria-label="PSI" rel="noreferrer">
                     <img src="app/img/psi.jpg" alt="PSI" />
                 </a>
                 <h3>PSI</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box printdesign">
-                <a href="https://hslearningrx.com/" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="https://hslearningrx.com/" target="_blank" aria-label="Patient Assist" rel="noreferrer">
                     <img src="app/img/patientassist.jpg" alt="Patient assist" />
                 </a>
                 <h3>Patient Assist</h3>
                 <p>Web developement</p>
             </div>
 
-            <div class="Portfolio-box webdesign">
-                <a href="http://www.stkarch.com/" target="_blank">
+            <div class="Portfolio-box webdesign box">
+                <a href="http://www.stkarch.com/" target="_blank" aria-label="DocoSTKa" rel="noreferrer">
                     <img src="app/img/soong.jpg" alt="Soong" />
                 </a>
                 <h3>STK</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box webdesign">
-                <a href="https://www.uhygubba.uy/#/home/es" target="_blank">
+            <div class="Portfolio-box webdesign box">
+                <a href="https://www.uhygubba.uy/#/home/es" target="_blank" aria-label="UHY Gubba" rel="noreferrer">
                     <img src="app/img/gubba.jpg" alt="Gubba" />
                 </a>
                 <h3>UHY Gubba</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box printdesign">
-                <a href="#" target="_blank">
+            <div class="Portfolio-box printdesign box">
+                <a href="javascript:;" aria-label="Kaoshi">
                     <img src="app/img/kaoshi.jpg" alt="Kaoshi" />
                 </a>
                 <h3>Kaoshi</h3>
                 <p>Web developement</p>
             </div>
-            <div class="Portfolio-box webdesign">
-                <a href="http://aromasdelatierra.uy/" target="_blank">
+            <div class="Portfolio-box webdesign box">
+                <a href="http://aromasdelatierra.uy/" target="_blank" aria-label="Aromas de la Tierra" rel="noreferrer">
                     <img src="app/img/Aromas.jpg" alt="Aromas de la Tierra" />
                 </a>
                 <h3>Aromas de la Tierra</h3>
                 <p>Web Design</p>
             </div>
-            <div class="Portfolio-box webdesign">
-                <a href="http://www.mydocumenta.com/" target="_blank">
+            <div class="Portfolio-box webdesign box">
+                <a href="http://www.mydocumenta.com/" target="_blank" aria-label="My Documenta" rel="noreferrer">
                     <img src="app/img/mydocumenta.png" alt="My Documenta" />
                 </a>
                 <h3>My Documenta</h3>
                 <p>Web Design</p>
             </div>
-            <div class=" Portfolio-box branding">
-                <a href="http://xendrafitness.com" target="_blank">
+            <div class=" Portfolio-box branding box">
+                <a href="javascript:;" aria-label="Xendra Fitness">
                     <img src="app/img/xendra.png" alt="Xendra Fitness" />
                 </a>
                 <h3>Xendra Fitness</h3>
                 <p>In-Progress</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="https://www.leads2buyer.com" target="_blank">
+            <div class=" Portfolio-box printdesign box">
+                <a href="https://www.leads2buyer.com" target="_blank" aria-label="Leads2buyer" rel="noreferrer">
                     <img src="app/img/leads2buyer.png" alt="leads2buyer" />
                 </a>
                 <h3>Leads2buyer</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="javascript:;">
+            <div class=" Portfolio-box printdesign box">
+                <a href="javascript:;" aria-label="Profesionales">
                     <img src="app/img/profesionales.png" alt="Profesionales" />
                 </a>
                 <h3>Profesionales</h3>
                 <p>Web developement</p>
             </div>
-            <div class=" Portfolio-box printdesign">
-                <a href="javascript:;">
+            <div class=" Portfolio-box printdesign box">
+                <a href="javascript:;" aria-label="La Maina">
                     <img src="app/img/laMaina.png" alt="La maina" />
                 </a>
                 <h3>La Maina</h3>
@@ -393,7 +463,7 @@
                     <!-- Bottom Carousel Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#quote-carousel" data-slide-to="0" class="active">
-                            <img class="img-responsive " src="app/img/client-pic1.jpg" alt="">
+                            <img class="img-responsive " src="app/img/guillermoGette.jpg" alt="">
                         </li>
                         <li data-target="#quote-carousel" data-slide-to="1">
                             <img class="img-responsive" src="app/img/client-pic2.jpg" alt="">
@@ -469,14 +539,14 @@
                             </blockquote>
                         </div>
                     </div>
-
-
                     <!-- Carousel Buttons Next/Prev -->
-                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
-                        <i class="fa fa-chevron-left hidden-xs"></i>
+                    <a data-slide="prev" aria-label="Prev" href="#quote-carousel"
+                        class="left carousel-control hidden-xs hidden-sm">
+                        <i class="fa fa-chevron-left "></i>
                     </a>
-                    <a data-slide="next" href="#quote-carousel" class="right carousel-control">
-                        <i class="fa fa-chevron-right hidden-xs"></i>
+                    <a data-slide="next" aria-label="Next" href="#quote-carousel"
+                        class="right carousel-control hidden-xs hidden-sm">
+                        <i class="fa fa-chevron-right "></i>
                     </a>
                 </div>
             </div>
@@ -486,14 +556,52 @@
     <div class="c-logo-part">
         <!--c-logo-part-start-->
         <div class="container">
-            <ul>
-                <li><a href="http://auditpro.com/" target="_blank"><img src="app/img/c-liogo1.png" alt=""></a></li>
-                <li><a href="https://www.doco.la/" target="_blank"><img src="app/img/c-liogo2.png" alt=""></a></li>
-                <li><a href="https://www.prestauy.com/" target="_blank"><img src="app/img/c-liogo3.png" alt=""></a></li>
-                <li><a href="http://emin.com.uy/" target="_blank"><img src="app/img/c-liogo4.png" alt=""></a></li>
-                <li><a href="http://loopbikes.uy/" target="_blank"><img src="app/img/c-liogo5.png" alt=""></a></li>
-                <li><a href="https://www.microsoft.com" target="_blank"><img src="app/img/c-liogo6.png" alt=""></a></li>
-            </ul>
+            <div class="customer-logos">
+                <div class="slide">
+                    <a href="http://auditpro.com/" target="_blank" rel="noreferrer" aria-label="auditpro"> <img
+                            src="app/img/logo/c-liogo1.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.doco.la/" target="_blank" rel="noreferrer" aria-label="docola"><img
+                            src="app/img/logo/c-liogo2.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.prestauy.com/" target="_blank" rel="noreferrer" aria-label="presta Uy"><img
+                            src="app/img/logo/c-liogo3.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="http://emin.com.uy/" target="_blank" rel="noreferrer" aria-label="emin"><img
+                            src="app/img/logo/c-liogo4.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="http://loopbikes.uy/" target="_blank" rel="noreferrer" aria-label="loop bikes"><img
+                            src="app/img/logo/c-liogo5.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.microsoft.com" target="_blank" rel="noreferrer" aria-label="microsoft"><img
+                            src="app/img/logo/c-liogo6.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.uhygubba.uy/" target="_blank" rel="noreferrer" aria-label="gubba"><img
+                            src="app/img/logo/gubba.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://pb-studio.com" target="_blank" rel="noreferrer" aria-label="plan b"><img
+                            src="app/img/logo/planb.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="http://psi.com.uy/" target="_blank" rel="noreferrer" aria-label="psi"><img
+                            src="app/img/logo/psi-logo.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://hslearningrx.com/" target="_blank" rel="noreferrer" aria-label="hs"><img
+                            src="app/img/logo/hs_logo.png" width="100" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="http://www.stkarch.com/" target="_blank" rel="noreferrer" aria-label="stk"><img
+                            src="app/img/logo/stkbaw.png" width="100" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
     <!--c-logo-part-end-->
@@ -505,13 +613,11 @@
             <div class="team-leader-block clearfix">
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/team-leader-pic1.jpg" alt="Alec">
                         <ul>
-                            <!--<li><a href="#" class="fa-twitter"></a></li>-->
-                            <li><a href="#" class="fa-pinterest"></a></li>
-                            <li><a href="#" class="fa-google-plus"></a></li>
-                            <li><a href="https://www.facebook.com/alec.ellis.714" class="fa-facebook"></a></li>
+                            <li><a href="https://www.facebook.com/alec.ellis.714" class="fa-facebook" target="_blank"
+                                    rel="noreferrer"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-03s">Alexander Ellis</h3>
@@ -522,14 +628,15 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/team-leader-pic2.jpg" alt="Eli">
                         <ul>
                             <li>
                                 <a href="https://www.linkedin.com/in/lic-eliana-perez-martino-86648120/"
-                                   class="fa-linkedin-square"></a>
+                                    class="fa-linkedin-square" target="_blank" rel="noreferrer"></a>
                             </li>
-                            <li><a href="https://www.facebook.com/epmartino" class="fa-facebook"></a></li>
+                            <li><a href="https://www.facebook.com/epmartino" target="_blank" rel="noreferrer"
+                                    class="fa-facebook"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-06s">Eliana Perez</h3>
@@ -542,13 +649,8 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/team-leader-pic3.jpg" alt="Diana">
-                        <ul>
-                            <!--<li><a href="#" class="fa-twitter"></a></li>
-                            <li><a href="#" class="fa-pinterest"></a></li>
-                            <li><a href="#" class="fa-google-plus"></a></li>-->
-                        </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-09s">Diana Perez</h3>
                     <span class="wow fadeInDown delay-09s">Chief Operation Officer</span>
@@ -560,10 +662,11 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/james.jpg" height="290" width="290" alt="James">
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/jamesbridgeford/" class="fa-linkedin"></a></li>
+                            <li><a href="https://www.linkedin.com/in/jamesbridgeford/" target="_blank" rel="noreferrer"
+                                    class="fa-linkedin"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-03s">James Bridgeford</h3>
@@ -575,11 +678,13 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/michael.jpg" height="290" width="290" alt="Mike">
                         <ul>
-                            <li><a href="https://twitter.com/michaelellisuy" class="fa-twitter"></a></li>
-                            <li><a href="https://github.com/michaelellisuy" class="fa-github"></a></li>
+                            <li><a href="https://twitter.com/michaelellisuy" target="_blank" rel="noreferrer"
+                                    class="fa-twitter"></a></li>
+                            <li><a href="https://github.com/michaelellisuy" target="_blank" rel="noreferrer"
+                                    class="fa-github"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-06s">Michael Ellis</h3>
@@ -592,13 +697,15 @@
 
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/mathias.jpg" height="290" width="290" alt="Mathias">
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/in/mathias-casa-756011142/" class="fa-linkedin"></a>
+                                <a href="https://www.linkedin.com/in/mathias-casa-756011142/" target="_blank"
+                                    rel="noreferrer" class="fa-linkedin"></a>
                             </li>
-                            <li><a href="https://github.com/pineapple-lab/mathiasCasa" class="fa-github"></a></li>
+                            <li><a href="https://github.com/pineapple-lab/mathiasCasa" target="_blank" rel="noreferrer"
+                                    class="fa-github"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-09s">Mathias Casa</h3>
@@ -610,12 +717,12 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/santiagoGolino.jpg" height="290" width="290" alt="Santiago">
                         <ul>
                             <li>
                                 <a href="https://www.linkedin.com/in/santiago-golino-martins-a39716143/"
-                                   class="fa-linkedin-square"></a>
+                                    class="fa-linkedin-square" target="_blank" rel="noreferrer"></a>
                             </li>
                         </ul>
                     </div>
@@ -627,13 +734,14 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/andresMatonti.jpg" height="290" width="290" alt="Matonti">
                         <ul>
-                            <li><a href="https://twitter.com/triadesign" class="fa-twitter"></a></li>
+                            <li><a href="https://twitter.com/triadesign" target="_blank" rel="noreferrer"
+                                    class="fa-twitter"></a></li>
                             <li>
                                 <a href="https://www.linkedin.com/in/andr%C3%A9s-matonti-25901119/"
-                                   class="fa-linkedin-square"></a>
+                                    class="fa-linkedin-square" target="_blank" rel="noreferrer"></a>
                             </li>
                         </ul>
                     </div>
@@ -647,19 +755,17 @@
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/joaquin.jpg" alt="Joaquin">
                         <ul>
-                            <!--<li><a href="#" class="fa-twitter"></a></li>
-                            <li><a href="#" class="fa-facebook"></a></li>
-                            <li><a href="#" class="fa-pinterest"></a></li>
-                            <li><a href="#" class="fa-google-plus"></a></li>-->
                             <li>
                                 <a href="https://www.linkedin.com/in/joaquin-cayrus-a9913b5b/"
-                                   class="fa-linkedin-square"></a>
+                                    class="fa-linkedin-square" target="_blank" rel="noreferrer"></a>
                             </li>
-                            <li><a href="https://www.facebook.com/joaquin.cayrus" class="fa-facebook"></a></li>
-                            <li><a href="https://github.com/joaquincayrus" class="fa-github"></a></li>
+                            <li><a href="https://www.facebook.com/joaquin.cayrus" target="_blank" rel="noreferrer"
+                                    class="fa-facebook"></a></li>
+                            <li><a href="https://github.com/joaquincayrus" target="_blank" rel="noreferrer"
+                                    class="fa-github"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-09s">Joaquin Cayrus</h3>
@@ -670,13 +776,14 @@
                         Every day I wake up thinking about what challenge will i get when i start!
                     </p>
                 </div>
-
+                <!-- 
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/alejandro.jpg" alt="Alejandro">
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/alejandro-rodr%C3%ADguez-reche-4b3850181/" class="fa-linkedin-square"></a></li>
+                            <li><a href="https://www.linkedin.com/in/alejandro-rodr%C3%ADguez-reche-4b3850181/"
+                                    class="fa-linkedin-square" target="_blank" rel="noreferrer"></a></li>
                         </ul>
                     </div>
                     <h3 class="wow fadeInDown delay-03s">ALEJANDRO RODRIGUEZ</h3>
@@ -687,68 +794,121 @@
                         I love to code all day long and the rest of the day I love to sing, play the guitar, exercise
                         and spend good time with loved people.
                     </p>
+                </div> -->
+                <div class="team-leader-box">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/julio.jpg" alt="Julio">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/julio-cesar-092634186" class="fa-linkedin-square"
+                                    target="_blank" rel="noreferrer"></a></li>
+                            <li><a href="https://github.com/julioE3274" target="_blank" rel="noreferrer"
+                                    class="fa-github"></a></li>
+                        </ul>
+                    </div>
+                    <h3 class="wow fadeInDown delay-03s">JULIO SUAREZ</h3>
+                    <span class="wow fadeInDown delay-03s">Full stack developer</span>
+                    <p class="wow fadeInDown delay-03s">
+                        I am a virtual pilot, aeroplane model-maker and also an Industrial Engineer. My work as a
+                        programmer is my biggest hobby and allows me to integrate these 3 activities.
+                    </p>
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
-                        <img src="app/img/julio.jpg" alt="Julio">
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/julio-cesar-092634186" class="fa-linkedin-square"></a></li>
-                            <li><a href="https://github.com/julioE3274" class="fa-github"></a></li>
-                        </ul>
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/bruno.jpg" alt="Bruno Silva">
                     </div>
-                    <h3 class="wow fadeInDown delay-06s">JULIO SUAREZ</h3>
-                    <span class="wow fadeInDown delay-06s">Full stack developer</span>
+                    <h3 class="wow fadeInDown delay-06s">BRUNO SILVA</h3>
+                    <span class="wow fadeInDown delay-06s">Frontend developer</span>
                     <p class="wow fadeInDown delay-06s">
-                        I am a virtual pilot, aeroplane model-maker and also an Industrial Engineer. My work as a programmer is my biggest hobby and allows me to integrate these 3 activities.
+                        My passion is soccer, bicycle and technology. I like that websites are accessible to all users,
+                        and adaptable to all devices.
                     </p>
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
-                        <img src="app/img/bruno.jpg" alt="Bruno">
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/german.jpg" alt="German">
+                        <ul>
+                            <li><a href="http://youtube.com/c/ZoteaMusic" target="_blank" rel="noreferrer"
+                                    class="fa-youtube-square"></a></li>
+                            <li><a href="https://www.linkedin.com/in/germanlamela/" target="_blank" rel="noreferrer"
+                                    class="fa-linkedin-square"></a></li>
+                        </ul>
                     </div>
-                    <h3 class="wow fadeInDown delay-09s">BRUNO SILVA</h3>
-                    <span class="wow fadeInDown delay-09s">Frontend developer</span>
+                    <h3 class="wow fadeInDown delay-09s">German Lamela</h3>
+                    <span class="wow fadeInDown delay-09s">Full stack developer</span>
                     <p class="wow fadeInDown delay-09s">
-                        My passion is soccer, bicycle and technology. I like that websites are accessible to all users, and adaptable to all devices.
+                        I am a Full Stack developer, lover of new technologies and artistic expression, always looking
+                        to bring new challenges to grow and improve my teamwork!
                     </p>
                 </div>
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
-                        <img src="app/img/german.jpg" alt="German">
-                        <ul>
-                            <li><a href="http://youtube.com/c/ZoteaMusic" class="fa-youtube-square"></a></li>
-                            <li><a href="https://www.linkedin.com/in/germanlamela/" class="fa-linkedin-square"></a></li>
-                        </ul>
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/yamaris.jpg" alt="Yamaris">
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">German Lamela</h3>
-                    <span class="wow fadeInDown delay-03s">Full stack developer</span>
+                    <h3 class="wow fadeInDown delay-03s">Yamaris Hernandez</h3>
+                    <span class="wow fadeInDown delay-03s">Software Quality Assurance Engineer</span>
                     <p class="wow fadeInDown delay-03s">
-                        I am a Full Stack developer, lover of new technologies and artistic expression, always looking to bring new challenges to grow and improve my teamwork!
+                        I work as a QA Tester. Permanently motivated by new challenges, design and execute test cases,
+                        as well as analysis, detection, defect reporting and monitoring of them. I like to learn new
+                        technologies that contribute to software quality assurance.
                     </p>
                 </div>
+
+                <!--  neww  -->
                 <div class="team-leader-box">
                     <div class="team-leader wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/brunoF.jpg" alt="Bruno Franquez">
+                    </div>
+                    <h3 class="wow fadeInDown delay-06s">Bruno Franquez </h3>
+                    <span class="wow fadeInDown delay-06s"> Ui Developer </span>
+                    <p class="wow fadeInDown delay-06s">
+                        I'm a volleyball player and frontend developer,
+                        I love to find new challenges and continue learning with my team.
+                    </p>
+                </div>
+
+                <div class="team-leader-box">
+                    <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader-shadow" onclick="return true"></div>
+                        <img src="app/img/oscar.jpg" alt="Oscar">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/oscar-mora-5b1702161/" target="_blank"
+                                    rel="noreferrer" class="fa-linkedin-square"></a></li>
+                        </ul>
+                    </div>
+                    <h3 class="wow fadeInDown delay-09s">Oscar Mora</h3>
+                    <span class="wow fadeInDown delay-09s"> Full Stack Developer
+                    </span>
+                    <p class="wow fadeInDown delay-09s">
+                        I love coding, try to make music, play sports... <br>I love the new challenges.
+                    </p>
+                </div>
+
+                <div class="team-leader-box">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/abanob.jpg" alt="Abanob">
                     </div>
-                    <h3 class="wow fadeInDown delay-06s">ABANOB WILLIAM</h3>
-                    <span class="wow fadeInDown delay-06s">Full Stack Developer</span>
-                    <p class="wow fadeInDown delay-06s">
-                        I love what I do, and I use my skills to make people enjoy dealing with my sites. My stack is
+                    <h3 class="wow fadeInDown delay-03s">ABANOB WILLIAM</h3>
+                    <span class="wow fadeInDown delay-03s">Full Stack Developer</span>
+                    <p class="wow fadeInDown delay-03s">
+                        I love what I do, and I use my skills to make people enjoy dealing with my sites. </br>My stack
+                        is
                         PHP, Wordpress, HTML, CSS, Javascript, jQuery, Bootstrap.
                     </p>
                 </div>
                 <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"><a href="#"></a></div>
+                    <div class="team-leader wow fadeInDown delay-06s">
+                        <div class="team-leader-shadow" onclick="return true"></div>
                         <img src="app/img/mkadhikari.jpg" alt="Madhukar">
                     </div>
-                    <h3 class="wow fadeInDown delay-09s">MADHUKAR ADHIKARI</h3>
-                    <span class="wow fadeInDown delay-09s">Frontend Developer</span>
-                    <p class="wow fadeInDown delay-09s">
+                    <h3 class="wow fadeInDown delay-06s">MADHUKAR ADHIKARI</h3>
+                    <span class="wow fadeInDown delay-06s">Frontend Developer</span>
+                    <p class="wow fadeInDown delay-06s">
                         Responsive guru. My websites design development technique is with market latest trend that
                         automatically adapts to all web-enabled devices.
                     </p>
@@ -801,20 +961,13 @@
                             22pm<br><strong>Saturday - Sunday:</strong> 9am - 20pm.
                         </span>
                     </div>
-                    <div class="contact-info-box address clearfix">
+                    <!-- <div class="contact-info-box address clearfix">
                         <h3><i class=" icon-map-marker"></i>Spain Office</h3><br />
                     </div>
                     <div class="contact-info-box address clearfix">
                         <h3><i class="fa fa-map-marker"></i>Address:</h3>
                         <span>Av. Oza, 31<br>La Coru&ntilde;a, Spain, 15006.</span>
-                    </div>
-                    <!-- <ul class="social-link">
-                         <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                         <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                         <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                         <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                          <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                     </ul>-->
+                    </div> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 wow fadeInUp delay-05s" ng-app="form">
                     <div class="form" ng-controller="homeCtrl as vm">
@@ -825,7 +978,7 @@
                             <input class="input-text" type="text" name="email" placeholder="Email">
 
                             <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email
-                                      ng-model="vm.user.mensaje" placeholder="Message"></textarea>
+                                ng-model="vm.user.mensaje" placeholder="Message"></textarea>
                             <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
                             <button type="submit" class="btn btn-warning">Send</button>
                         </form>
@@ -834,11 +987,29 @@
             </div>
         </section>
     </div>
-    <section id="maps">
-        <div class="col-md-4" id="map1"></div>
-        <div class="col-md-4" id="map2"></div>
-        <div class="col-md-4" id="map3"></div>
-    </section>
+    <div id="map"></div>
+    <!-- Hide controls until they are moved into the map. -->
+    <div style="display:none">
+        <div class="controls zoom-control">
+            <button class="zoom-control-back" title="Back"><i class="fa fa-undo" style="font-size: 20px;"></i></button>
+            <button class="zoom-control-in" title="Zoom In"><i class="fa fa-search-plus"
+                    style="font-size: 20px;"></i></button>
+            <button class="zoom-control-out" title="Zoom Out"><i class="fa fa-search-minus"
+                    style="font-size: 20px;"></i></button>
+        </div>
+        <div class="controls maptype-control maptype-control-is-map">
+            <button class="maptype-control-map" title="Show road map">Map</button>
+            <button class="maptype-control-satellite" title="Show satellite imagery">Satellite</button>
+        </div>
+        <div class="controls fullscreen-control">
+            <button title="Toggle Fullscreen">
+                <div class="fullscreen-control-icon fullscreen-control-top-left"></div>
+                <div class="fullscreen-control-icon fullscreen-control-top-right"></div>
+                <div class="fullscreen-control-icon fullscreen-control-bottom-left"></div>
+                <div class="fullscreen-control-icon fullscreen-control-bottom-right"></div>
+            </button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-logo">
@@ -859,6 +1030,8 @@
     <script type="text/javascript" src="app/js/angular.min.js"></script>
     <script type="text/javascript" src="app/js/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="app/js/angularjs-captcha.js"></script>
+    <script type="text/javascript" src="app/js/slick.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> -->
 
 
     <script type="text/javascript" src="app/js/CommonService.js"></script>
@@ -870,43 +1043,14 @@
 
     <script type="text/javascript" src="app/js/classie.js"></script>
     <script type="text/javascript" src="app/js/mainf.js"></script>
+    <script type="text/javascript" src="app/js/map.js"></script>
     <!-- endbuild -->
+
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakIwJebqHNEbDY5Mt2ZEs-P7XR2vKJdo&callback=initMap"></script>
-    <script>
-        function initMap() {
-            var uluru1 = { lat: 40.713068, lng: -74.010308 };
-            var uluru2 = { lat: -34.882327, lng: -56.072614 };
-            var uluru3 = { lat: 43.354572, lng: -8.397633 };
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakIwJebqHNEbDY5Mt2ZEs-P7XR2vKJdo&callback=initMap">
+        </script>
 
-            var map1 = new google.maps.Map(document.getElementById('map1'), {
-                zoom: 14,
-                center: uluru1
-            });
-            var map2 = new google.maps.Map(document.getElementById('map2'), {
-                zoom: 14,
-                center: uluru2
-            });
 
-            var map3 = new google.maps.Map(document.getElementById('map3'), {
-                zoom: 14,
-                center: uluru3
-            });
-
-            var marker1 = new google.maps.Marker({
-                position: uluru1,
-                map: map1
-            });
-            var marker2 = new google.maps.Marker({
-                position: uluru2,
-                map: map2
-            });
-            var marker3 = new google.maps.Marker({
-                position: uluru3,
-                map: map3
-            });
-        }
-    </script>
 </body>
 
 </html>
