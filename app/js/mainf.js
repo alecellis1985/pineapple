@@ -1,5 +1,5 @@
 $(document).ready(function (e) {
-  $('#test').scrollToFixed();
+  $('#start').scrollToFixed();
   $('.res-nav_click').click(function () {
     $('.main-nav').slideToggle();
     return false;
@@ -68,9 +68,53 @@ $(window).load(function () {
   });
 });
 
-//(function () {
+// (function () {
 //  'use strict';
 //  $('.team-leader-box').on('click', function () {
 //    $(this).find('p').slideToggle("slow");
 //  });
-//})();
+// })();
+
+
+
+$(function() {
+$('.customer-logos').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: false,
+  pauseOnHover: false,
+  responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4
+      }
+    },{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 3
+    }
+  }, {
+    breakpoint: 520,
+    settings: {
+      slidesToShow: 2
+    }
+  }]
+  });
+});
+$('.customer-logos').each(function () {
+  var $slide = $(this).parent();    
+  if ($slide.attr('aria-describedby') != undefined) { 
+      $(this).attr('id', $slide.attr('aria-describedby'));
+  }
+});
+
+
+
+
+
+
+
+
