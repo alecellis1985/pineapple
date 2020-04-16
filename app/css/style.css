@@ -439,7 +439,8 @@ img {
 .c-logo-part {
   background: #7cc576;
   padding: 25px 0;
-  filter: alpha(opacity=60); }
+  filter: alpha(opacity=60); 
+  height: 100px; }
 
 .c-logo-part ul {
   padding: 0;
