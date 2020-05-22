@@ -1,4 +1,4 @@
-(function () {
+(function (angular) {
   'use strict';
   //debugger;
   angular.module('form').controller('homeCtrl', homeCtrl);
@@ -27,4 +27,4 @@
         function init() {
         }
     }
-})();
+})(angular);
