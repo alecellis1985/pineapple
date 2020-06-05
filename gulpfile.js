@@ -24,7 +24,7 @@ var dev = 'dev';
 var prod = 'dist';
 var fontsFolder = rootFile + 'fonts';
 var currentEnv;
-var isDev = false;
+var isDev = true;
 //var imageminWebp = require('imagemin-webp');
 //var imageminJpegtran = require('imagemin-jpegtran');
 //var jp2 = require('gulp-jpeg-2000');
@@ -62,18 +62,16 @@ function checkCurrentEnv() {
 }
 
 gulp.task('watch', function () {
-    //gulp.watch(rootFile + 'scss/**/*.scss', ['sass']);
     gulp.watch(rootFile + 'css/**/*.css', ['useref', 'index']);
-    gulp.watch(rootFile + 'js/**/*', ['useref', 'index']);
-    gulp.watch(rootFile + '*.html', ['templates', 'index']);
+    gulp.watch(rootFile + 'js/**', ['useref', 'index']);
+    gulp.watch('*.html', ['templates', 'index']);
 });
 
 //BUILDS
-
 gulp.task('build', function (callback) {
     isDev = true;
     runSequence('clean', 'sass', 'css', 'notToMinifyJs',
-        ['useref', 'images', 'vendor', 'templates'], 'index', 'cacheBuster',
+        ['useref', 'images', 'fonts', 'templates', 'templates2'], 'index', 'cacheBuster',
         callback
     );
 });
@@ -106,7 +104,7 @@ gulp.task('default', function (callback) {
 
 gulp.task('sass', function () {
     checkCurrentEnv();
-    return gulp.src(rootFile + 'scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    return gulp.src(rootFile + 'scss/**.scss') // Gets all files ending with .scss in app/scss and children dirs
         .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
         .pipe(gulp.dest(rootFile + `${currentEnv}/css/`)) // Outputs it in the css folder
         .pipe(browserSync.reload({// Reloading with Browser Sync
@@ -124,14 +122,14 @@ gulp.task('sassProd', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('vendor/fonts/**/*')
-        .pipe(gulp.dest('dist/' + rootFile + 'fonts'));
+    return gulp.src(fontsFolder + '/**/*')
+        .pipe(gulp.dest(`${currentEnv}/${rootFile}fonts`));
 });
 
 gulp.task('css', function () {
     checkCurrentEnv();
     return gulp.src(rootFile + 'css/**/*.css') // Gets all files ending with .css in app/scss and children dirs
-        .pipe(gulp.dest(`${currentEnv}/css/`)) // Outputs it in the css folder
+        .pipe(gulp.dest(`${currentEnv}/${rootFile}/css/`)) // Outputs it in the css folder
         .pipe(browserSync.reload({// Reloading with Browser Sync
             stream: true
         }));
@@ -143,12 +141,6 @@ gulp.task('assets', function (callback) {
     runSequence([`images`, 'vendor'],
         callback
     );
-});
-
-gulp.task('vendor', function () { //Copy vendor files (Fonts, CSS, Images...)
-    checkCurrentEnv();
-    return gulp.src(['vendor/**/*'])
-        .pipe(gulp.dest(`${currentEnv}/vendor`));
 });
 
 gulp.task('images', function () {
@@ -174,7 +166,7 @@ gulp.task('templates', function () {
 gulp.task('templates2', function () {
     checkCurrentEnv();//**/*
     return gulp.src(['js/**/*.html'])
-        .pipe(gulp.dest(`${currentEnv}/js/`));
+        .pipe(gulp.dest(`${currentEnv}/${rootFile}/js/`));
 });
 
 gulp.task('index', function () { //Update index file.
@@ -203,9 +195,9 @@ gulp.task('useref', function () {
             .pipe(gulp.dest(`${currentEnv}`));
     } else {
         runSequence('index');
-        return gulp.src(['js/**/*'])
+        return gulp.src([`${rootFile}/js/**/*`])
             .pipe(useref())
-            .pipe(gulp.dest(`${currentEnv}/js`));
+            .pipe(gulp.dest(`${currentEnv}/${rootFile}/js`));
     }
 });
 

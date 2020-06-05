@@ -1,28 +1,41 @@
 (function (angular) {
-  'use strict';
-  //debugger;
-  angular.module('form').controller('homeCtrl', homeCtrl);
-  homeCtrl.$inject = ['$timeout', '$rootScope', 'CommonService'];
-    function homeCtrl($timeout, $rootScope, CommonService) {
+    'use strict';
+    //debugger;
+    angular.module('form').controller('homeCtrl', homeCtrl);
+    homeCtrl.$inject = ['$rootScope', 'CommonService'];
+    function homeCtrl($rootScope, CommonService) {
         var vm = this;
-
+        vm.submitted = true;
+        vm.sent = false;
+        vm.showErr = false;
+        vm.showSuccess = false;
         vm.sendEmail = function (isValid) {
-            debugger;
             if (!isValid) {
-                $rootScope.$broadcast('alert-event', { type: 'danger', msg: "Existen errores en el formulario!" });
+                vm.showErr = true;
                 return;
             }
+            debugger;
 
-			CommonService.postJsonRequest('api/sendMail', vm.user).then(function (result) {
-                if (result.data.success)
-                    $rootScope.$broadcast('alert-event', { type: 'success', msg: 'Has sido registrado con exito' });
-                else
-                    $rootScope.$broadcast('alert-event', { type: 'danger', msg: result.data.msg });
+            CommonService.postJsonRequest('api/sendMail', vm.user).then(function (result) {
+                if (result.status !== 200) {
+                    vm.showErr = true;
+                    vm.errMessage = "Form is not valid.";
+                    return;
+                }
+                if (result.data.success) {
+                    vm.sent = true;
+                    vm.showErr = false;
+                    vm.showSuccess = true;
+                    vm.succcessMessage = "Email has been sent! We'll get back to you soon!";
+                }
+                else {
+                    vm.showErr = true;
+                    vm.errMessage = result.data.msg;
+                }
             });
         };
 
         init();
-        //Functions *
 
         function init() {
         }
