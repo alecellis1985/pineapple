@@ -1088,7 +1088,10 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-6 wow fadeInLeft">
                     <div class="contact-info-box address clearfix">
-                        <h3><i class=" icon-map-marker"></i>US Office</h3>
+                        <h3>
+                            <img src="app/img/usa.png" width="20" style="top: -2px;position: relative;">
+                            <i class=" icon-map-marker"></i>US Office
+                        </h3>
                     </div>
                     <div class="contact-info-box address clearfix">
                         <h3><i class="fa fa-map-marker"></i>Address:</h3>
@@ -1099,7 +1102,10 @@
                         <span>+13473057243</span>
                     </div>
                     <div class="contact-info-box address clearfix">
-                        <h3><i class=" icon-map-marker"></i>Uruguay Office</h3><br />
+                        <h3 style="width: 100%;">
+                            <img src="app/img/uruguay.png" width="20" style="top: -2px;position: relative;">
+                            <i class=" icon-map-marker"></i>Uruguay Office
+                        </h3><br />
                     </div>
                     <div class="contact-info-box address clearfix">
                         <h3><i class="fa fa-map-marker"></i>Main Address:</h3>
@@ -1121,7 +1127,7 @@
                         <h3><i class="fa-clock-o"></i>Hours:</h3>
                         <span>
                             <strong>Monday - Thursday:</strong> 8am - 23:59pm<br><strong>Friday:</strong> 8am -
-                            22pm<br><strong>Saturday - Sunday:</strong> 9am - 20pm.
+                            20pm<br><strong>Saturday - Sunday:</strong> 9am - 20pm.
                         </span>
                     </div>
                 </div>
@@ -1153,7 +1159,6 @@
                                           ng-model="vm.user.mensaje" placeholder="Message"></textarea>
                                 <p ng-show="emailData.mensaje.$invalid && !emailData.mensaje.$pristine" class="help-block">Message is required the min length is 20 characters..</p>
                             </div>
-                            <pre>{{emailData.$valid}}</pre>
                             <button type="submit" ng-disabled="!emailData.$valid || vm.sent" class="btn btn-warning">Send</button>
                             <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
                         </form>
