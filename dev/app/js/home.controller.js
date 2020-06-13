@@ -14,13 +14,15 @@
                 vm.showErr = true;
                 return;
             }
-            CommonService.postRequestUrlencoded('api/sendEmail.php', 'contactData=' + JSON.stringify(vm.user)).then(function (result) {
+            debugger;
+
+            CommonService.postJsonRequest('api/sendMail', 'contactData='+JSON.stringify(vm.user)).then(function (result) {
                 if (result.status !== 200) {
                     vm.showErr = true;
                     vm.errMessage = "Form is not valid.";
                     return;
                 }
-                if (result.data === "OK") {
+                if (result.data.success) {
                     vm.sent = true;
                     vm.showErr = false;
                     vm.showSuccess = true;
@@ -28,7 +30,7 @@
                 }
                 else {
                     vm.showErr = true;
-                    vm.errMessage = result;
+                    vm.errMessage = result.data.msg;
                 }
             });
         };
